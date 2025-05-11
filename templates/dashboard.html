@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+    Panel Usuario
+{% endblock %}
+{% block content %}
+<div class="container mt-4">
+ 
+    <a href="/logout" class="btn btn-danger"> Cerrar Sessión</a>
+    <h2>Bienvenido, {{name}}</h2>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Información del usuario</h5>
+            <p class="card-text">Nombre: {{name}} </p>
+            <p class="card-text">Email: {{current_user.email}} </p>
+            <p class="card-text">Username: {{username}} </p>
+        </div>
+    </div>
+
+
+</div>
+    
+{% endblock %}

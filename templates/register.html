@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+    Registro
+{% endblock %}
+{% block content %}
+    
+    <h2 class="text-center mb-4">Registro</h2>
+
+    <div class="d-flex justify-content-center">
+        <form action="" method="POST" class="w-50 p-4 border rounded shadow-sm bg-light">
+
+            <div class="mb-3">
+                <label for="">Nombre Completo</label>
+                <input type="text" name="name" id="" class="form-control">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="">Email</label>
+                <input type="email" name="email" id="" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="">Username</label>
+                <input type="text" name="username" id="" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="">Contraseña</label>
+                <input type="password" name="password" id="" class="form-control">
+            </div>
+            
+            <div class="text-center">
+                <input type="submit" value="Registrar" class="btn btn-primary">
+            </div>
+        </form>
+
+    </div>
+{% endblock %}
